@@ -4,12 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint . --ext .ts",
+    "build": "tsc",
+    "start": "node ./dist/aws.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.5.4"
+    "@eslint/js": "^9.8.0",
+    "@types/express": "^4.17.1",
+    "eslint": "^9.8.0",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.0.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.624.0",
+    "@aws-sdk/client-sns": "^3.624.0",
+    "express": "^4.17.1"
   }
 }

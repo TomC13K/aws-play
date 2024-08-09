@@ -1,6 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "lib": ["ES2022"],
+    "module": "ES2022",
+    "moduleResolution": "Bundler", // introduced in TypeScript 5.0
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "target": "ES2022",
+    "strict": true
+  },
+  "include": ["src/**/*.ts"],
+}
+
+
+/*
+{
+  "compilerOptions": {
+    "target": "es6",
     "module": "commonjs",
     "rootDir": "./src",
     "outDir": "./dist",
@@ -10,3 +26,4 @@
     "skipLibCheck": true
   }
 }
+*/

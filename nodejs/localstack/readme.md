@@ -29,12 +29,21 @@ https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/
 npm install @aws-sdk/client-lambda
 ```
 
-## Localstack
+## Localstack, terraform
 ```bash
 # Install localstack CLI
 brew install localstack/tap/localstack-cli
 
+# Install terraformlocal & terraform
+brew install terraform
+brew install terraform-local
+
 # use localstack in the project
 localstack config validate
 docker compose up -d
+
+## terraform
+tflocal init
+tflocal plan
+tflocal apply
 ```
